@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Pemesanan Tiket</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="judul">
+        <h1><center>PESAN TIKET ONLINE DI SINI</center></h1>
+    </div>
+
+    <!-- DI dalam form ini proses penginputan serta dijalankan oleh PHP-->
+    <form action="proses.php" method="POST" id="formTiket">
+    <div class="container">
+        <div class="form-group">
+            <label>Nama:</label>
+            <input type="text" name="nama" required>
+        </div>
+
+    <!-- JUMLAH TIKET-->
+        <div class="form-group">
+                <label>Jumlah Tiket:</label>
+                <input type="number" name="jumlah" id="jumlah" min="1" value="1" required>
+        </div>
+
+    <!--KATEGORI-->
+        <div class="form-group">
+            <label>Kategori:</label>
+                <select name="kategori" id="kategori">
+                    <option value="dewasa">Dewasa</option>
+                    <option value="anak">Anak</option>
+                </select>
+        </div>
+
+    <!-- TOTAL HARGA TIKET-->
+        <div class="form-group">
+            <label>Total Harga:</label>
+            <input type="text" id="total" readonly>
+        </div>
+            <button type="submit">Pesan</button>
+            <button type="reset">cencel</button>
+    </div>
+    </form>
+
+        <div class="footer">
+            <p><center>Copyright : Muhammad Ramdani Al Ghifary | Nim 2400018072</center></p>
+        </div>
+    </body>
+</html>
