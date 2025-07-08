@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     <div class="total">Total Bayar: Rp <?= number_format($total, 0, ',', '.') ?></div>
     
-    <a href="form.html" class="btn-kembali">🔙 Kembali ke Form</a>
+    <a href="index.html" class="btn-kembali">🔙 Kembali ke Form</a>
 </div>
 
 </body>
