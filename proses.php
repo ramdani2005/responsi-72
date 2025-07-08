@@ -9,6 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $jumlah = (int) $_POST["jumlah"];
     $kategori = $_POST["kategori"];
     $total = hitung_total($jumlah, $kategori);
+}
 ?>
 <!DOCTYPE html>
 <html lang="id">
